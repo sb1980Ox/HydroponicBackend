@@ -1,1 +1,10 @@
 /home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/App.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/Pricing.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/Product.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/enums/ProductType.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/enums/WateringSystem.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/productstats/Base.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/productstats/Column.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/productstats/Measurements.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/productapi/productstats/ProductStats.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/rest/ProductController.java

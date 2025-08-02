@@ -1,1 +1,10 @@
+com/stefan/hydroapp/rest/ProductController.class
 com/stefan/hydroapp/App.class
+com/stefan/hydroapp/dto/productapi/productstats/Base.class
+com/stefan/hydroapp/dto/productapi/Product.class
+com/stefan/hydroapp/dto/productapi/enums/ProductType.class
+com/stefan/hydroapp/dto/productapi/productstats/Measurements.class
+com/stefan/hydroapp/dto/productapi/productstats/ProductStats.class
+com/stefan/hydroapp/dto/productapi/productstats/Column.class
+com/stefan/hydroapp/dto/productapi/Pricing.class
+com/stefan/hydroapp/dto/productapi/enums/WateringSystem.class
