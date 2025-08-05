@@ -1,1 +1,3 @@
 com/stefan/hydroapp/App.class
+com/stefan/hydroapp/dto/emailApi/ContactForm.class
+com/stefan/hydroapp/rest/EmailController.class

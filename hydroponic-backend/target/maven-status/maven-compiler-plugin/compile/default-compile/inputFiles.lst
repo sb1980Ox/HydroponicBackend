@@ -1,1 +1,3 @@
 /home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/App.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/dto/emailApi/ContactForm.java
+/home/stefan/dev/Java-Projekte/HydroponicBackend/hydroponic-backend/src/main/java/com/stefan/hydroapp/rest/EmailController.java
