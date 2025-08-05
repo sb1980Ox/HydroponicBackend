@@ -31,12 +31,12 @@ public class EmailController {
         mailMessage.setReplyTo(form.getFromAdress());
         mailMessage.setFrom(form.getFromName());
         mailMessage.setSubject("Anfrage von " + form.getFromName() + "(" + form.getFromAdress()
-                + "):" + form.getSubject());
+                + "): " + form.getSubject());
         mailMessage.setText(form.getMessage());
 
         try {
             javaMailSender.send(mailMessage);
-            return ResponseEntity.ok("Mail gesendet.");
+            return ResponseEntity.ok("Mail gesendet.\n");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Fehler beim Senden der Mail: "
                     + e.getMessage());
