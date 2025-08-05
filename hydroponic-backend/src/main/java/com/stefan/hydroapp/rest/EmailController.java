@@ -6,13 +6,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/contact")
+@CrossOrigin(origins = "http://localhost:5173")
 public class EmailController {
 
     private final JavaMailSender javaMailSender;
@@ -28,15 +28,14 @@ public class EmailController {
 
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setTo(this.toAddress);
-        mailMessage.setReplyTo(form.getFromAdress());
-        mailMessage.setFrom(form.getFromName());
-        mailMessage.setSubject("Anfrage von " + form.getFromName() + "(" + form.getFromAdress()
-                + "):" + form.getSubject());
+        mailMessage.setReplyTo(form.getFromAddress());
+        mailMessage.setSubject("Anfrage von " + form.getFromName() + "(" + form.getFromAddress()
+                + "): " + form.getSubject());
         mailMessage.setText(form.getMessage());
 
         try {
             javaMailSender.send(mailMessage);
-            return ResponseEntity.ok("Mail gesendet.");
+            return ResponseEntity.ok("{\"result\": \"Mail gesendet\"}");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Fehler beim Senden der Mail: "
                     + e.getMessage());
